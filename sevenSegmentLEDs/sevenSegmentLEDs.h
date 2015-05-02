@@ -1,4 +1,8 @@
-/* by Ofer Haviv */
+/* 
+By Ofer Haviv April-2015
+Functions definition and constant of values for 7seg show numbers
+
+*/
 
 #ifndef sevenSegmentLEDs_h
 #define sevenSegmentLEDs_h

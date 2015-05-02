@@ -1,7 +1,25 @@
-/* By Ofer Haviv
+/* 
+By Ofer Haviv April-2015
 
+This library is for seven segment 4bit stack
+for more information see my page on github https://github.com/oferhaviv/Arduino
 
+Functions list: https://github.com/oferhaviv/Arduino/wiki/7segment%204bit%20functions
 
+7segment 4bit functions list:
+Must use function:
+void begin(); begin is very common and actually doing pinMode OUPUT to all related pins
+
+Most common functions:
+void sendNumber(unsigned int num); The major function - send a number and it will show up on the 7seg 4bit
+void sendNumber( float num, int numbersAfterDot); this function is pretty similar to the previous but you can use fractions and choose how many digits after the point to show. if choose to use it, you must init the point PIN with dotSupport function
+void refresh(); this function can be use in the loop to keep the lights on if need
+
+Optional functions:
+void SegmentsPins (int segmentPins[]); i put some default wiring and its common one - you can choose different and change the segment pins
+void DigitsPins (int digitPins[]); i put some default wiring and its common one - you can choose different and change the digits pins
+void zeroWhenClear (bool zero); you can choose to have zero digits when empty - e.g. 48 will be present as 0048
+void dotSupport (bool dotSupport, int dotPIN); must use this function when try to present fractions, define the point pin
 */
 #include "sevenSegmentLEDs.h"
 
@@ -145,7 +163,7 @@ num = num - dig[3];
 	  num = (num * 10) - dig[6];
   }
   
-    // remove leading zeros
+  // remove leading zeros
   if (dig[0] == 0 )
   { 
     dig[0]=10;
