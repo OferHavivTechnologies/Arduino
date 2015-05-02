@@ -2,5 +2,5 @@
 
 
 ## Libraries for Arduino 
-[[https://github.com/oferhaviv/Arduino/blob/master/sevenSegmentLEDs/images/7seg_4bit_thumb.jpg]]
-* [Digital 7-Segment (seven segment) 4bit Display] (https://github.com/oferhaviv/Arduino/wiki/Digital%207-Segment%20(seven%20segment)%204bit%20Display)
+
+[[https://github.com/oferhaviv/Arduino/blob/master/sevenSegmentLEDs/images/7seg_4bit_thumb.jpg]] [Digital 7-Segment (seven segment) 4bit Display](Digital 7-Segment (seven segment) 4bit Display)
